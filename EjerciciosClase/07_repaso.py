@@ -32,14 +32,17 @@ print("Edad fuera del rango válido)
 
 """
 for edad in edades:
-    print(edad)
-    if edad <= 11:
-        print ("Niño")
-    elif edad >= 12 and edad <= 16:
-        print ("Adolescente")
-    elif edad >= 18 and edad <= 29:
-        print ("Joven")
-    elif edad >= 30 and edad <= 59:
-        print ("Adulto")
-    elif edad >= 60:
-        print ("Adulto Mayor")
+    print(str(edad) + " - ", end="")
+    if edad >= 1 and edad <= 130:
+        if edad <= 11:
+            print ("Niño")
+        elif edad >= 12 and edad <= 16:
+            print ("Adolescente")
+        elif edad >= 18 and edad <= 29:
+            print ("Joven")
+        elif edad >= 30 and edad <= 59:
+            print ("Adulto")
+        elif edad >= 60 and edad <= 130:
+            print ("Adulto Mayor")
+    else:
+        print("Edad fuera del rango válido")

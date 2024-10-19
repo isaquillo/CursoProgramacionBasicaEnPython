@@ -74,3 +74,5 @@ while edad >= 12 and edad <=17:
 
 
 
+
+

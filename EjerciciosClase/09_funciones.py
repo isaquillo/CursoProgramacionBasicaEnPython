@@ -11,6 +11,8 @@ Permiten usar la técnica "divide y vencerás" al enfrentar un problema
 # sumar(5, 10)
 
 # Valores por defecto en una función
+# Cuando se llama a la función sin argumentos, la función tomará
+# los valores por defecto que se hayan definido
 def multiplicar(num1 = 4, num2 = 5):
     print(num1 * num2)
 
@@ -29,7 +31,7 @@ def introducir_calificaciones(num):
 
 # Sumar todas las calificaciones
 def sumar_calificaciones(calificaciones):
-    suma = 0
+    suma = 0 # Generalmente comienza en 0
     for calificacion in calificaciones:
         suma += calificacion
     return suma
@@ -50,4 +52,5 @@ calificaciones = introducir_calificaciones(3)
 suma = sumar_calificaciones(calificaciones)
 promedio = calcular_promedio(suma, len(calificaciones))
 imprimir_resultado(promedio)
+
 
